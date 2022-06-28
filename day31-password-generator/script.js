@@ -25,6 +25,13 @@ clipboardEl.addEventListener('click', () => {
     clipboardIconEl.classList.remove('fa-clipboard')
     clipboardIconEl.classList.add('fas')
     clipboardIconEl.classList.add('fa-clipboard-check')
+
+    setTimeout(() => {
+        clipboardIconEl.classList.remove('fas')
+        clipboardIconEl.classList.remove('fa-clipboard-check')
+        clipboardIconEl.classList.add('far')
+        clipboardIconEl.classList.add('fa-clipboard')
+    }, 3000)
 })
 
 function generatePassword(lower, upper, number, symbol, length) {
@@ -53,10 +60,6 @@ generateEl.addEventListener('click', () => {
     const hasSymbol = symbolsEl.checked
 
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
-    clipboardIconEl.classList.remove('fas')
-    clipboardIconEl.classList.remove('fa-clipboard-check')
-    clipboardIconEl.classList.add('far')
-    clipboardIconEl.classList.add('fa-clipboard')
 })
 
 
