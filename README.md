@@ -1,6 +1,6 @@
 # 50 Projects in 50 Days - HTML/CSS and JavaScript
 
-`This repo fork from https://github.com/bradtraversy/50projects50days`
+**This repo forked from https://github.com/bradtraversy/50projects50days**
 
 
 This is the main repository for all of the projects in the course.
